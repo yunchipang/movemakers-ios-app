@@ -9,17 +9,37 @@ import SwiftUI
 import FirebaseStorage
 
 struct ContentView: View {
-    
     let storageRef = Storage.storage().reference()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            NavigationView {
+                HomeView()
+            }
+           .tabItem {
+               Image(systemName: "house.fill")
+               Text("Home")
+                   .font(.title)
+            }
+           
+            NavigationView {
+                LibraryView()
+            }
+            .tabItem {
+                Image(systemName: "folder.fill")
+                Text("Library")
+                    .font(.title)
+             }
+           
+            NavigationView {
+                ProfileView()
+            }
+            .tabItem {
+                Image(systemName: "person.fill")
+                Text("Profile")
+                    .font(.title)
+            }
         }
-        .padding()
     }
 }
 
