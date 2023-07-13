@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231CD2DD70175C218BD14CEA /* Pods_MoveMakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A747B1776830FEBBE4D57780 /* Pods_MoveMakers.framework */; };
 		C13A12CE2A6098C5002AE467 /* MoveMakersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A12CD2A6098C5002AE467 /* MoveMakersApp.swift */; };
 		C13A12D02A6098C5002AE467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A12CF2A6098C5002AE467 /* ContentView.swift */; };
 		C13A12D22A6098C6002AE467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13A12D12A6098C6002AE467 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95A0F7A94EDE95A58ABFEA83 /* Pods-MoveMakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoveMakers.release.xcconfig"; path = "Target Support Files/Pods-MoveMakers/Pods-MoveMakers.release.xcconfig"; sourceTree = "<group>"; };
+		A747B1776830FEBBE4D57780 /* Pods_MoveMakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoveMakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F439B290EDF90EEC77C570 /* Pods-MoveMakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoveMakers.debug.xcconfig"; path = "Target Support Files/Pods-MoveMakers/Pods-MoveMakers.debug.xcconfig"; sourceTree = "<group>"; };
 		C13A12CA2A6098C5002AE467 /* MoveMakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveMakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13A12CD2A6098C5002AE467 /* MoveMakersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMakersApp.swift; sourceTree = "<group>"; };
 		C13A12CF2A6098C5002AE467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231CD2DD70175C218BD14CEA /* Pods_MoveMakers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0934A4BC0D19881CF5B01ACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A747B1776830FEBBE4D57780 /* Pods_MoveMakers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C13A12C12A6098C5002AE467 = {
 			isa = PBXGroup;
 			children = (
 				C13A12CC2A6098C5002AE467 /* MoveMakers */,
 				C13A12CB2A6098C5002AE467 /* Products */,
+				D49E537AF0DF70D6A617AAAC /* Pods */,
+				0934A4BC0D19881CF5B01ACF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +84,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D49E537AF0DF70D6A617AAAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9F439B290EDF90EEC77C570 /* Pods-MoveMakers.debug.xcconfig */,
+				95A0F7A94EDE95A58ABFEA83 /* Pods-MoveMakers.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C13A12D92A6098C6002AE467 /* Build configuration list for PBXNativeTarget "MoveMakers" */;
 			buildPhases = (
+				2400A9485F43524E9DFA93A8 /* [CP] Check Pods Manifest.lock */,
 				C13A12C62A6098C5002AE467 /* Sources */,
 				C13A12C72A6098C5002AE467 /* Frameworks */,
 				C13A12C82A6098C5002AE467 /* Resources */,
+				45E0A609E671AED2A8FF0955 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2400A9485F43524E9DFA93A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoveMakers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45E0A609E671AED2A8FF0955 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoveMakers/Pods-MoveMakers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoveMakers/Pods-MoveMakers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoveMakers/Pods-MoveMakers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C13A12C62A6098C5002AE467 /* Sources */ = {
@@ -258,6 +327,7 @@
 		};
 		C13A12DA2A6098C6002AE467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F439B290EDF90EEC77C570 /* Pods-MoveMakers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 		};
 		C13A12DB2A6098C6002AE467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A0F7A94EDE95A58ABFEA83 /* Pods-MoveMakers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
