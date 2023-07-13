@@ -9,8 +9,8 @@ import SwiftUI
 import FirebaseStorage
 
 struct ContentView: View {
-    // add firebase storage reference
-    let storage = Storage.storage()
+    
+    let storageRef = Storage.storage().reference()
     
     var body: some View {
         VStack {
