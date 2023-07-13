@@ -7,5 +7,6 @@ target 'MoveMakers' do
 
   # Pods for MoveMakers
   pod 'FirebaseAuth'
+  pod 'FirebaseCore'
   pod 'FirebaseFirestore'
 end

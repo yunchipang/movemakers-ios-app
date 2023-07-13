@@ -12,6 +12,7 @@
 		C13A12D02A6098C5002AE467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A12CF2A6098C5002AE467 /* ContentView.swift */; };
 		C13A12D22A6098C6002AE467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13A12D12A6098C6002AE467 /* Assets.xcassets */; };
 		C13A12D62A6098C6002AE467 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13A12D52A6098C6002AE467 /* Preview Assets.xcassets */; };
+		C13A12DD2A609CFD002AE467 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13A12DC2A609CFD002AE467 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C13A12D12A6098C6002AE467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13A12D32A6098C6002AE467 /* MoveMakers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoveMakers.entitlements; sourceTree = "<group>"; };
 		C13A12D52A6098C6002AE467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C13A12DC2A609CFD002AE467 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				C13A12CF2A6098C5002AE467 /* ContentView.swift */,
 				C13A12D12A6098C6002AE467 /* Assets.xcassets */,
 				C13A12D32A6098C6002AE467 /* MoveMakers.entitlements */,
+				C13A12DC2A609CFD002AE467 /* GoogleService-Info.plist */,
 				C13A12D42A6098C6002AE467 /* Preview Content */,
 			);
 			path = MoveMakers;
@@ -90,7 +93,6 @@
 				B9F439B290EDF90EEC77C570 /* Pods-MoveMakers.debug.xcconfig */,
 				95A0F7A94EDE95A58ABFEA83 /* Pods-MoveMakers.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +158,7 @@
 			files = (
 				C13A12D62A6098C6002AE467 /* Preview Assets.xcassets in Resources */,
 				C13A12D22A6098C6002AE467 /* Assets.xcassets in Resources */,
+				C13A12DD2A609CFD002AE467 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +359,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,6 +398,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
