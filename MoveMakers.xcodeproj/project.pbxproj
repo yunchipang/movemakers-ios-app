@@ -26,6 +26,7 @@
 		C13A12D32A6098C6002AE467 /* MoveMakers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoveMakers.entitlements; sourceTree = "<group>"; };
 		C13A12D52A6098C6002AE467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C13A12DC2A609CFD002AE467 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C14457592A60A94900EACC75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		C13A12C12A6098C5002AE467 = {
 			isa = PBXGroup;
 			children = (
+				C14457592A60A94900EACC75 /* GoogleService-Info.plist */,
 				C13A12CC2A6098C5002AE467 /* MoveMakers */,
 				C13A12CB2A6098C5002AE467 /* Products */,
 				D49E537AF0DF70D6A617AAAC /* Pods */,
