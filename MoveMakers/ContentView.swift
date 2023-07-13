@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseStorage
 
 struct ContentView: View {
+    // add firebase storage reference
+    let storage = Storage.storage()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
