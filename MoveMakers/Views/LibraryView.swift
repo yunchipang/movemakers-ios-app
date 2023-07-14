@@ -10,10 +10,9 @@ import FirebaseStorage
 
 struct LibraryView: View {
     
-    @EnvironmentObject var viewModel: ViewModel
+    @State var imageToLoad: UIImage?
     private var imageFileName = "IMG_5369-min.JPG"
-    @State private var imageToLoad: UIImage?
-    
+
     var body: some View {
         VStack {
             Text("Library view")
@@ -27,27 +26,9 @@ struct LibraryView: View {
             }
         }
         .onAppear(perform: {
-            downloadImage(imageFileName: imageFileName)
-        })
-    }
-    
-    var imagesRef: StorageReference {
-        return Storage.storage().reference().child("images")
-    }
-    
-    func downloadImage(imageFileName: String) {
-        let downloadRef = imagesRef.child(imageFileName)
-        
-        downloadRef.getData(maxSize: 2 * 1024 * 1024) { data, error in
-            if let error = error {
-                print("Error loading image: \(error.localizedDescription)")
-            } else {
-                if let data = data, let loadedImage = UIImage(data: data) {
-                    self.imageToLoad = loadedImage
-                } else {
-                    print("invalid image data")
-                }
+            ImageDownloader.downloadImage(imageFileName: imageFileName) { loadedImage in
+                imageToLoad = loadedImage
             }
-        }
+        })
     }
 }
