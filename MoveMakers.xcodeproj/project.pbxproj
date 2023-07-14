@@ -16,6 +16,7 @@
 		C14457602A60B6FC00EACC75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144575F2A60B6FC00EACC75 /* HomeView.swift */; };
 		C14457622A60B71200EACC75 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14457612A60B71200EACC75 /* LibraryView.swift */; };
 		C14457642A60B72600EACC75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14457632A60B72600EACC75 /* ProfileView.swift */; };
+		C17CEDE92A60C9270038FAFD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CEDE82A60C9270038FAFD /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C144575F2A60B6FC00EACC75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C14457612A60B71200EACC75 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		C14457632A60B72600EACC75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C17CEDE82A60C9270038FAFD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				C144575E2A60B6EE00EACC75 /* Views */,
 				C13A12CD2A6098C5002AE467 /* MoveMakersApp.swift */,
 				C13A12CF2A6098C5002AE467 /* ContentView.swift */,
+				C17CEDE82A60C9270038FAFD /* ViewModel.swift */,
 				C13A12D12A6098C6002AE467 /* Assets.xcassets */,
 				C13A12D32A6098C6002AE467 /* MoveMakers.entitlements */,
 				C13A12DC2A609CFD002AE467 /* GoogleService-Info.plist */,
@@ -234,6 +237,7 @@
 				C14457602A60B6FC00EACC75 /* HomeView.swift in Sources */,
 				C14457642A60B72600EACC75 /* ProfileView.swift in Sources */,
 				C13A12D02A6098C5002AE467 /* ContentView.swift in Sources */,
+				C17CEDE92A60C9270038FAFD /* ViewModel.swift in Sources */,
 				C13A12CE2A6098C5002AE467 /* MoveMakersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
