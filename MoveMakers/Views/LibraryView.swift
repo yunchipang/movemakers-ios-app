@@ -14,7 +14,10 @@ import AVFoundation
 struct LibraryView: View {
     
     var imageFileName = "IMG_5369-min.JPG"
-    var videoUrl: String = "gs://movemakers-696fc.appspot.com/videos/473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV"
+//    var videoUrl: String = "gs://movemakers-696fc.appspot.com/videos/473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV"
+    var videoUrl: URL? {
+        Bundle.main.url(forResource: "473F5ED1-213E-4B4E-BF83-2B0305AEC14C", withExtension: "MOV")
+    }
     
     @State var imageToLoad: UIImage?
     @State var player = AVPlayer()
@@ -32,11 +35,11 @@ struct LibraryView: View {
             }
             
             // load video
-            VideoPlayer(player: player)
-                .onAppear() {
-                    player = AVPlayer(url: URL(string: videoUrl)!)
-                }
-                .frame(width: 400, height: 300, alignment: .center)
+            if let videoUrl {
+                VideoPlayer(player: AVPlayer(url: videoUrl))
+            } else {
+                Text("failed to get video URL!")
+            }
         }
         .onAppear(perform: {
             ImageDownloader.downloadImage(imageFileName: imageFileName) { loadedImage in

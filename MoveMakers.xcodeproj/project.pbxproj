@@ -17,6 +17,7 @@
 		C14457622A60B71200EACC75 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14457612A60B71200EACC75 /* LibraryView.swift */; };
 		C14457642A60B72600EACC75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14457632A60B72600EACC75 /* ProfileView.swift */; };
 		C17CEDF12A60D1C90038FAFD /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CEDF02A60D1C90038FAFD /* ImageDownloader.swift */; };
+		C17CEDF52A60EB790038FAFD /* 473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C17CEDF42A60EB790038FAFD /* 473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C14457612A60B71200EACC75 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		C14457632A60B72600EACC75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C17CEDF02A60D1C90038FAFD /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		C17CEDF42A60EB790038FAFD /* 473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV"; path = "../../Downloads/473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		C13A12C12A6098C5002AE467 = {
 			isa = PBXGroup;
 			children = (
+				C17CEDF42A60EB790038FAFD /* 473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV */,
 				C14457592A60A94900EACC75 /* GoogleService-Info.plist */,
 				C13A12CC2A6098C5002AE467 /* MoveMakers */,
 				C13A12CB2A6098C5002AE467 /* Products */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13A12D62A6098C6002AE467 /* Preview Assets.xcassets in Resources */,
+				C17CEDF52A60EB790038FAFD /* 473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV in Resources */,
 				C13A12D22A6098C6002AE467 /* Assets.xcassets in Resources */,
 				C13A12DD2A609CFD002AE467 /* GoogleService-Info.plist in Resources */,
 			);
