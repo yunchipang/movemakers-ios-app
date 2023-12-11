@@ -6,45 +6,28 @@
 //
 
 import SwiftUI
-import FirebaseStorage
+//import FirebaseStorage
 import AVKit
-import _AVKit_SwiftUI
 import AVFoundation
+//import _AVKit_SwiftUI
+
 
 struct LibraryView: View {
     
-    var imageFileName = "IMG_5369-min.JPG"
 //    var videoUrl: String = "gs://movemakers-696fc.appspot.com/videos/473F5ED1-213E-4B4E-BF83-2B0305AEC14C.MOV"
-    var videoUrl: URL? {
-        Bundle.main.url(forResource: "473F5ED1-213E-4B4E-BF83-2B0305AEC14C", withExtension: "MOV")
-    }
     
-    @State var imageToLoad: UIImage?
-    @State var player = AVPlayer()
-
+    // display a local video (temp)
+    var videoFileName: String = "tinashe-needs";
+    
     var body: some View {
         VStack {
-            
-            // load image
-            if let image = imageToLoad {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            } else {
-                Text("Image loading...")
+            VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: videoFileName, withExtension: "mov")!)) {
             }
-            
-            // load video
-            if let videoUrl {
-                VideoPlayer(player: AVPlayer(url: videoUrl))
-            } else {
-                Text("failed to get video URL!")
-            }
+            .edgesIgnoringSafeArea(.all)
+            .aspectRatio(1.0, contentMode: .fit)
+            .padding(.all)
+            .background(Color.white)
         }
-        .onAppear(perform: {
-            ImageDownloader.downloadImage(imageFileName: imageFileName) { loadedImage in
-                imageToLoad = loadedImage
-            }
-        })
     }
+
 }
