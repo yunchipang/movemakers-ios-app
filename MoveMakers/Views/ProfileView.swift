@@ -14,7 +14,7 @@ struct ProfileView: View {
                 .clipShape(Circle())
             Text("Leonardo Bae")
             Text("💃🏻 Instructor | Choreographer")
-            Text("✨ Hip hop | Afro | Reggaetón")
+            Text("✨ Hip-hop | Afro | Reggaetón")
             Text("📍In the Groove Studios")
         }
     }
