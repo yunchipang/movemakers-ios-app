@@ -85,13 +85,12 @@
 		C13A12CC2A6098C5002AE467 /* MoveMakers */ = {
 			isa = PBXGroup;
 			children = (
+				C18457902B28394C00E7BEF3 /* ViewModel */,
 				C184578E2B28364000E7BEF3 /* GoogleService-Info.plist */,
 				C18457892B28348800E7BEF3 /* Videos */,
-				C18457462B28196300E7BEF3 /* Models */,
-				C18457452B28195600E7BEF3 /* Utilities */,
-				C144575E2A60B6EE00EACC75 /* Views */,
+				C18457462B28196300E7BEF3 /* Model */,
+				C144575E2A60B6EE00EACC75 /* View */,
 				C13A12CD2A6098C5002AE467 /* MoveMakersApp.swift */,
-				C13A12CF2A6098C5002AE467 /* ContentView.swift */,
 				C13A12D12A6098C6002AE467 /* Assets.xcassets */,
 				C13A12D32A6098C6002AE467 /* MoveMakers.entitlements */,
 				C13A12D42A6098C6002AE467 /* Preview Content */,
@@ -107,38 +106,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C144575E2A60B6EE00EACC75 /* Views */ = {
+		C144575E2A60B6EE00EACC75 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C18457492B281D5B00E7BEF3 /* LibraryView */,
+				C13A12CF2A6098C5002AE467 /* ContentView.swift */,
+				C14457612A60B71200EACC75 /* LibraryView.swift */,
 				C144575F2A60B6FC00EACC75 /* HomeView.swift */,
 				C14457632A60B72600EACC75 /* ProfileView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
-		C18457452B28195600E7BEF3 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		C18457462B28196300E7BEF3 /* Models */ = {
+		C18457462B28196300E7BEF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C18457472B2819C900E7BEF3 /* Video.swift */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C18457492B281D5B00E7BEF3 /* LibraryView */ = {
-			isa = PBXGroup;
-			children = (
-				C14457612A60B71200EACC75 /* LibraryView.swift */,
-				C184574A2B281D7400E7BEF3 /* LibraryViewModel.swift */,
-			);
-			path = LibraryView;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C18457892B28348800E7BEF3 /* Videos */ = {
@@ -149,6 +133,14 @@
 				C18457872B28348200E7BEF3 /* tinashe-needs.mov */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		C18457902B28394C00E7BEF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C184574A2B281D7400E7BEF3 /* LibraryViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D49E537AF0DF70D6A617AAAC /* Pods */ = {

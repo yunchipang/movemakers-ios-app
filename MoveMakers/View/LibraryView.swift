@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import FirebaseStorage
+import FirebaseStorage
 import AVKit
 import AVFoundation
 //import _AVKit_SwiftUI
@@ -19,10 +19,7 @@ struct LibraryView: View {
     var body: some View {
         VStack {
             ForEach(viewModel.videos, id: \.id) { video in
-                // remote
-//                VideoPlayer(player: AVPlayer(url: video.videoUrl)) {
-//
-//                }
+                // todo: remote
                 
                 // local
                 if let videoURL = Bundle.main.url(forResource: video.name, withExtension: "mov") {
@@ -30,7 +27,6 @@ struct LibraryView: View {
                         // additional video player customization if needed
                     }
                     .edgesIgnoringSafeArea(.all)
-//                    .aspectRatio(1.0, contentMode: .fit)
                     .padding(.all)
                     .background(Color.white)
                 } else {

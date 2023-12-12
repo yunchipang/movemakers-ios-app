@@ -18,10 +18,6 @@ struct Video {
     let studio: String
 }
 
-//struct VideoResponse: Decodable {
-//    let request: [Video]
-//}
-
 struct MockData {
     static let sampleVideo1 = Video(id: 1,
                                    date: "2023-11-12",
