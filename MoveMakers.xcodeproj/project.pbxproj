@@ -15,9 +15,11 @@
 		C14457602A60B6FC00EACC75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144575F2A60B6FC00EACC75 /* HomeView.swift */; };
 		C14457622A60B71200EACC75 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14457612A60B71200EACC75 /* LibraryView.swift */; };
 		C14457642A60B72600EACC75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14457632A60B72600EACC75 /* ProfileView.swift */; };
-		C18457442B27B55600E7BEF3 /* tinashe-needs.mov in Resources */ = {isa = PBXBuildFile; fileRef = C18457432B27B55600E7BEF3 /* tinashe-needs.mov */; };
 		C18457482B2819C900E7BEF3 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18457472B2819C900E7BEF3 /* Video.swift */; };
 		C184574B2B281D7400E7BEF3 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184574A2B281D7400E7BEF3 /* LibraryViewModel.swift */; };
+		C18457742B282B9100E7BEF3 /* tyla-water.mov in Resources */ = {isa = PBXBuildFile; fileRef = C18457712B282B9100E7BEF3 /* tyla-water.mov */; };
+		C18457752B282B9100E7BEF3 /* tinashe-needs.mov in Resources */ = {isa = PBXBuildFile; fileRef = C18457722B282B9100E7BEF3 /* tinashe-needs.mov */; };
+		C18457772B282C1B00E7BEF3 /* ravynlenae-closer.mov in Resources */ = {isa = PBXBuildFile; fileRef = C18457762B282C1B00E7BEF3 /* ravynlenae-closer.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +36,11 @@
 		C14457612A60B71200EACC75 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		C14457632A60B72600EACC75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C184573D2B27ABEA00E7BEF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C18457432B27B55600E7BEF3 /* tinashe-needs.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "tinashe-needs.mov"; path = "../../../../Downloads/tinashe-needs.mov"; sourceTree = "<group>"; };
 		C18457472B2819C900E7BEF3 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		C184574A2B281D7400E7BEF3 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		C18457712B282B9100E7BEF3 /* tyla-water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "tyla-water.mov"; path = "../../../../Downloads/tyla-water.mov"; sourceTree = "<group>"; };
+		C18457722B282B9100E7BEF3 /* tinashe-needs.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "tinashe-needs.mov"; path = "../../../../Downloads/tinashe-needs.mov"; sourceTree = "<group>"; };
+		C18457762B282C1B00E7BEF3 /* ravynlenae-closer.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "ravynlenae-closer.mov"; path = "../../../../Downloads/ravynlenae-closer.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				C184573D2B27ABEA00E7BEF3 /* GoogleService-Info.plist */,
-				C18457432B27B55600E7BEF3 /* tinashe-needs.mov */,
+				C18457762B282C1B00E7BEF3 /* ravynlenae-closer.mov */,
+				C18457722B282B9100E7BEF3 /* tinashe-needs.mov */,
+				C18457712B282B9100E7BEF3 /* tyla-water.mov */,
 				C18457462B28196300E7BEF3 /* Models */,
 				C18457452B28195600E7BEF3 /* Utilities */,
 				C144575E2A60B6EE00EACC75 /* Views */,
@@ -205,9 +211,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18457772B282C1B00E7BEF3 /* ravynlenae-closer.mov in Resources */,
+				C18457742B282B9100E7BEF3 /* tyla-water.mov in Resources */,
 				C13A12D62A6098C6002AE467 /* Preview Assets.xcassets in Resources */,
+				C18457752B282B9100E7BEF3 /* tinashe-needs.mov in Resources */,
 				C13A12D22A6098C6002AE467 /* Assets.xcassets in Resources */,
-				C18457442B27B55600E7BEF3 /* tinashe-needs.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

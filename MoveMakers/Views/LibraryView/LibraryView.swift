@@ -19,18 +19,24 @@ struct LibraryView: View {
     var body: some View {
         VStack {
             ForEach(viewModel.videos, id: \.id) { video in
-                // local
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: video.name, withExtension: "mov")!)) {
-                    // additional video player customization if needed
-                }
                 // remote
 //                VideoPlayer(player: AVPlayer(url: video.videoUrl)) {
 //
 //                }
-                .edgesIgnoringSafeArea(.all)
-                .aspectRatio(1.0, contentMode: .fit)
-                .padding(.all)
-                .background(Color.white)
+                
+                // local
+                if let videoURL = Bundle.main.url(forResource: video.name, withExtension: "mov") {
+                    VideoPlayer(player: AVPlayer(url: videoURL)) {
+                        // additional video player customization if needed
+                    }
+                    .edgesIgnoringSafeArea(.all)
+//                    .aspectRatio(1.0, contentMode: .fit)
+                    .padding(.all)
+                    .background(Color.white)
+                } else {
+                    Text("Error loading video for \(video.name)")
+                        .foregroundColor(.red)
+                }
             }
         
         }
