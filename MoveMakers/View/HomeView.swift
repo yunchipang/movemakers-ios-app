@@ -12,3 +12,4 @@ struct HomeView: View {
         Text("Welcome to MoveMakers🕺🏻")
     }
 }
+
